@@ -1,2 +1,7 @@
-
+__pycache__/
+*.pyc
+.venv/
+.env
 evaluation/results/
+
+__pycache__/
