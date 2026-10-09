@@ -29,3 +29,5 @@ build/
 .vscode/
 .DS_Store
 Thumbs.db
+
+backend/tests/backend_kpi_results.xml
