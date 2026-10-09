@@ -1,31 +1,18 @@
-
 # Python
-__pycache__/
+
+**pycache**/
 *.py[cod]
 .venv/
-venv/
 
 # Local database
+
 *.db
 
 # Environment secrets
+
 .env
-.env.*
-!.env.example
 
 # Test and tool caches
+
 .pytest_cache/
 .mypy_cache/
-
-# Generated evaluation results
-evaluation/results/
-
-# Frontend dependencies and builds
-node_modules/
-dist/
-build/
-
-# IDE and operating system files
-.vscode/
-.DS_Store
-Thumbs.db
