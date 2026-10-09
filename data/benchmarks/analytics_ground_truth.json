@@ -1,0 +1,96 @@
+[
+  {
+    "case_id": "GT-001",
+    "question": "What is the total recognized sales revenue?",
+    "expected_answer": {
+      "value": 407736461.79,
+      "currency": "INR"
+    },
+    "source_tables": [
+      "sales_orders.csv"
+    ],
+    "metric": "total_revenue"
+  },
+  {
+    "case_id": "GT-002",
+    "question": "How many inventory records are below reorder level?",
+    "expected_answer": {
+      "count": 90
+    },
+    "source_tables": [
+      "inventory.csv"
+    ],
+    "metric": "low_stock_count"
+  },
+  {
+    "case_id": "GT-003",
+    "question": "Which product has the highest delivered sales quantity?",
+    "expected_answer": {
+      "product_id": "PRD-0055"
+    },
+    "source_tables": [
+      "sales_orders.csv"
+    ],
+    "metric": "top_selling_product"
+  },
+  {
+    "case_id": "GT-004",
+    "question": "Find the cheapest eligible supplier for 100 units of PRD-0001.",
+    "expected_answer": {
+      "supplier_id": "SUP-036",
+      "estimated_cost": 291957.0
+    },
+    "source_tables": [
+      "supplier_offers.csv"
+    ],
+    "metric": "supplier_selection"
+  },
+  {
+    "case_id": "GT-005",
+    "question": "How many recorded deliveries were delayed?",
+    "expected_answer": {
+      "count": 1393
+    },
+    "source_tables": [
+      "deliveries.csv"
+    ],
+    "metric": "delayed_deliveries"
+  },
+  {
+    "case_id": "GT-006",
+    "question": "What is the net cash flow across all recorded transactions?",
+    "expected_answer": {
+      "value": 226621602.5,
+      "currency": "INR"
+    },
+    "source_tables": [
+      "finance_transactions.csv"
+    ],
+    "metric": "net_cash_flow"
+  },
+  {
+    "case_id": "GT-007",
+    "question": "What is the total value of purchase orders pending approval?",
+    "expected_answer": {
+      "value": 23922967.8,
+      "currency": "INR"
+    },
+    "source_tables": [
+      "purchase_orders.csv"
+    ],
+    "metric": "pending_approval_value"
+  },
+  {
+    "case_id": "GT-008",
+    "question": "Compare recognized revenue in Q3 2026 against Q2 2026.",
+    "expected_answer": {
+      "q2_revenue": 47209442.16,
+      "q3_revenue": 47528495.83,
+      "percentage_change": 0.68
+    },
+    "source_tables": [
+      "sales_orders.csv"
+    ],
+    "metric": "quarterly_revenue_comparison"
+  }
+]

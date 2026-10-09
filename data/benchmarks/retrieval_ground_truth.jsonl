@@ -1,0 +1,30 @@
+{"query_id": "RET-001", "query": "Where can I see overall business performance?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "page_retrieval"}
+{"query_id": "RET-002", "query": "Show the executive overview", "relevant_ids": ["PAGE_DASHBOARD"], "category": "page_retrieval"}
+{"query_id": "RET-003", "query": "Where are the warehouse stock levels?", "relevant_ids": ["PAGE_INVENTORY"], "category": "page_retrieval"}
+{"query_id": "RET-004", "query": "Find the inventory management screen", "relevant_ids": ["PAGE_INVENTORY"], "category": "page_retrieval"}
+{"query_id": "RET-005", "query": "Where can I compare vendors?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "page_retrieval"}
+{"query_id": "RET-006", "query": "Show supplier reliability information", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "page_retrieval"}
+{"query_id": "RET-007", "query": "Where do I manage purchase orders?", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "page_retrieval"}
+{"query_id": "RET-008", "query": "Open procurement management", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "page_retrieval"}
+{"query_id": "RET-009", "query": "Where can I see customer sales orders?", "relevant_ids": ["PAGE_SALES"], "category": "page_retrieval"}
+{"query_id": "RET-010", "query": "Find the sales performance page", "relevant_ids": ["PAGE_SALES"], "category": "page_retrieval"}
+{"query_id": "RET-011", "query": "Where are shipment delays tracked?", "relevant_ids": ["PAGE_LOGISTICS"], "category": "page_retrieval"}
+{"query_id": "RET-012", "query": "Show the delivery management page", "relevant_ids": ["PAGE_LOGISTICS"], "category": "page_retrieval"}
+{"query_id": "RET-013", "query": "Where can I review cash flow?", "relevant_ids": ["PAGE_FINANCE"], "category": "page_retrieval"}
+{"query_id": "RET-014", "query": "Find supplier payment information", "relevant_ids": ["PAGE_FINANCE"], "category": "page_retrieval"}
+{"query_id": "RET-015", "query": "Where can I compare monthly trends?", "relevant_ids": ["PAGE_ANALYTICS"], "category": "page_retrieval"}
+{"query_id": "RET-016", "query": "Find historical business reports", "relevant_ids": ["PAGE_ANALYTICS"], "category": "page_retrieval"}
+{"query_id": "RET-017", "query": "Where do I approve pending requests?", "relevant_ids": ["PAGE_APPROVALS"], "category": "page_retrieval"}
+{"query_id": "RET-018", "query": "Find purchase order approvals", "relevant_ids": ["PAGE_APPROVALS"], "category": "page_retrieval"}
+{"query_id": "RET-019", "query": "Where can I inspect agent execution logs?", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "page_retrieval"}
+{"query_id": "RET-020", "query": "Show the agent performance history", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "page_retrieval"}
+{"query_id": "RET-021", "query": "Retrieve data for Business Overview", "relevant_ids": ["API_DASHBOARD_SUMMARY"], "category": "api_retrieval"}
+{"query_id": "RET-022", "query": "Retrieve data for Inventory & Warehouse", "relevant_ids": ["API_INVENTORY_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-023", "query": "Retrieve data for Supplier Management", "relevant_ids": ["API_SUPPLIERS_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-024", "query": "Retrieve data for Procurement", "relevant_ids": ["API_PURCHASE_ORDERS_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-025", "query": "Retrieve data for Sales & Orders", "relevant_ids": ["API_SALES_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-026", "query": "Retrieve data for Logistics & Deliveries", "relevant_ids": ["API_DELIVERIES_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-027", "query": "Retrieve data for Finance & Cash Flow", "relevant_ids": ["API_FINANCE_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-028", "query": "Retrieve data for Analytics & Reports", "relevant_ids": ["API_ANALYTICS_SUMMARY"], "category": "api_retrieval"}
+{"query_id": "RET-029", "query": "Retrieve data for Approvals", "relevant_ids": ["API_APPROVALS_LIST"], "category": "api_retrieval"}
+{"query_id": "RET-030", "query": "Retrieve data for Agent Activity", "relevant_ids": ["API_AGENT_ACTIVITY_LIST"], "category": "api_retrieval"}
