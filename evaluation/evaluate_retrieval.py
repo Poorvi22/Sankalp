@@ -6,8 +6,24 @@ import statistics
 ROOT = Path(__file__).resolve().parents[1]
 
 GOLD = ROOT / "data/benchmarks/retrieval_ground_truth.jsonl"
-PRED = ROOT / "evaluation/results/retrieval_predictions.jsonl"
-REPORT = ROOT / "evaluation/results/retrieval_report.json"
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--method",
+    choices=["tfidf", "faiss"],
+    default="tfidf"
+)
+args = parser.parse_args()
+
+PRED = ROOT / "evaluation/results" / (
+    "faiss_predictions.jsonl"
+    if args.method == "faiss"
+    else "retrieval_predictions.jsonl"
+)
+REPORT = ROOT / "evaluation/results" / (
+    f"{args.method}_retrieval_report.json"
+)
 
 def load_jsonl(path):
     with open(path, encoding="utf-8") as f:
