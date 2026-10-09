@@ -1,0 +1,100 @@
+{"query_id": "ADV-0001", "query": "How is the whole company doing?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "page"}
+{"query_id": "ADV-0002", "query": "Give me a quick overview of business health", "relevant_ids": ["PAGE_DASHBOARD"], "category": "page"}
+{"query_id": "ADV-0003", "query": "What needs the owner's attention today?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "page"}
+{"query_id": "ADV-0004", "query": "Which items are running out?", "relevant_ids": ["PAGE_INVENTORY"], "category": "page"}
+{"query_id": "ADV-0005", "query": "Where do I check warehouse stock?", "relevant_ids": ["PAGE_INVENTORY"], "category": "page"}
+{"query_id": "ADV-0006", "query": "Find products that need replenishment", "relevant_ids": ["PAGE_INVENTORY"], "category": "page"}
+{"query_id": "ADV-0007", "query": "Which vendors are dependable?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "page"}
+{"query_id": "ADV-0008", "query": "Where can I compare vendor prices?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "page"}
+{"query_id": "ADV-0009", "query": "Find suppliers with shorter lead times", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "page"}
+{"query_id": "ADV-0010", "query": "Where do I prepare buying requests?", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "page"}
+{"query_id": "ADV-0011", "query": "Show purchasing paperwork", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "page"}
+{"query_id": "ADV-0012", "query": "I need to order more materials", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "page"}
+{"query_id": "ADV-0013", "query": "What are customers buying?", "relevant_ids": ["PAGE_SALES"], "category": "page"}
+{"query_id": "ADV-0014", "query": "Show customer order activity", "relevant_ids": ["PAGE_SALES"], "category": "page"}
+{"query_id": "ADV-0015", "query": "Which products sold the most?", "relevant_ids": ["PAGE_SALES"], "category": "page"}
+{"query_id": "ADV-0016", "query": "Which shipments missed their deadline?", "relevant_ids": ["PAGE_LOGISTICS"], "category": "page"}
+{"query_id": "ADV-0017", "query": "Where are my deliveries?", "relevant_ids": ["PAGE_LOGISTICS"], "category": "page"}
+{"query_id": "ADV-0018", "query": "Show transportation delays", "relevant_ids": ["PAGE_LOGISTICS"], "category": "page"}
+{"query_id": "ADV-0019", "query": "Where is the company's money going?", "relevant_ids": ["PAGE_FINANCE"], "category": "page"}
+{"query_id": "ADV-0020", "query": "Show money received and paid", "relevant_ids": ["PAGE_FINANCE"], "category": "page"}
+{"query_id": "ADV-0021", "query": "What are our outstanding expenses?", "relevant_ids": ["PAGE_FINANCE"], "category": "page"}
+{"query_id": "ADV-0022", "query": "Compare this quarter with last quarter", "relevant_ids": ["PAGE_ANALYTICS"], "category": "page"}
+{"query_id": "ADV-0023", "query": "Find long-term business trends", "relevant_ids": ["PAGE_ANALYTICS"], "category": "page"}
+{"query_id": "ADV-0024", "query": "Analyze our performance over two years", "relevant_ids": ["PAGE_ANALYTICS"], "category": "page"}
+{"query_id": "ADV-0025", "query": "What decisions are waiting for authorization?", "relevant_ids": ["PAGE_APPROVALS"], "category": "page"}
+{"query_id": "ADV-0026", "query": "Where do I approve purchase requests?", "relevant_ids": ["PAGE_APPROVALS"], "category": "page"}
+{"query_id": "ADV-0027", "query": "Show pending sign-offs", "relevant_ids": ["PAGE_APPROVALS"], "category": "page"}
+{"query_id": "ADV-0028", "query": "What actions did the assistant perform?", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "page"}
+{"query_id": "ADV-0029", "query": "Show the chatbot's execution history", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "page"}
+{"query_id": "ADV-0030", "query": "Where can I inspect failed agent tasks?", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "page"}
+{"query_id": "ADV-0031", "query": "Find the data grid for business overview", "relevant_ids": ["PAGE_DASHBOARD_GRID"], "category": "widget"}
+{"query_id": "ADV-0032", "query": "Find the chart for business overview", "relevant_ids": ["PAGE_DASHBOARD_CHART"], "category": "widget"}
+{"query_id": "ADV-0033", "query": "Find the data grid for inventory & warehouse", "relevant_ids": ["PAGE_INVENTORY_GRID"], "category": "widget"}
+{"query_id": "ADV-0034", "query": "Find the chart for inventory & warehouse", "relevant_ids": ["PAGE_INVENTORY_CHART"], "category": "widget"}
+{"query_id": "ADV-0035", "query": "Find the data grid for supplier management", "relevant_ids": ["PAGE_SUPPLIERS_GRID"], "category": "widget"}
+{"query_id": "ADV-0036", "query": "Find the chart for supplier management", "relevant_ids": ["PAGE_SUPPLIERS_CHART"], "category": "widget"}
+{"query_id": "ADV-0037", "query": "Find the data grid for procurement", "relevant_ids": ["PAGE_PROCUREMENT_GRID"], "category": "widget"}
+{"query_id": "ADV-0038", "query": "Find the chart for procurement", "relevant_ids": ["PAGE_PROCUREMENT_CHART"], "category": "widget"}
+{"query_id": "ADV-0039", "query": "Find the data grid for sales & orders", "relevant_ids": ["PAGE_SALES_GRID"], "category": "widget"}
+{"query_id": "ADV-0040", "query": "Find the chart for sales & orders", "relevant_ids": ["PAGE_SALES_CHART"], "category": "widget"}
+{"query_id": "ADV-0041", "query": "Find the data grid for logistics & deliveries", "relevant_ids": ["PAGE_LOGISTICS_GRID"], "category": "widget"}
+{"query_id": "ADV-0042", "query": "Find the chart for logistics & deliveries", "relevant_ids": ["PAGE_LOGISTICS_CHART"], "category": "widget"}
+{"query_id": "ADV-0043", "query": "Find the data grid for finance & cash flow", "relevant_ids": ["PAGE_FINANCE_GRID"], "category": "widget"}
+{"query_id": "ADV-0044", "query": "Find the chart for finance & cash flow", "relevant_ids": ["PAGE_FINANCE_CHART"], "category": "widget"}
+{"query_id": "ADV-0045", "query": "Find the data grid for analytics & reports", "relevant_ids": ["PAGE_ANALYTICS_GRID"], "category": "widget"}
+{"query_id": "ADV-0046", "query": "Find the chart for analytics & reports", "relevant_ids": ["PAGE_ANALYTICS_CHART"], "category": "widget"}
+{"query_id": "ADV-0047", "query": "Find the data grid for approvals", "relevant_ids": ["PAGE_APPROVALS_GRID"], "category": "widget"}
+{"query_id": "ADV-0048", "query": "Find the chart for approvals", "relevant_ids": ["PAGE_APPROVALS_CHART"], "category": "widget"}
+{"query_id": "ADV-0049", "query": "Find the data grid for agent activity", "relevant_ids": ["PAGE_AGENT_ACTIVITY_GRID"], "category": "widget"}
+{"query_id": "ADV-0050", "query": "Find the chart for agent activity", "relevant_ids": ["PAGE_AGENT_ACTIVITY_CHART"], "category": "widget"}
+{"query_id": "ADV-0051", "query": "Which service should handle: retrieve data for business overview?", "relevant_ids": ["API_DASHBOARD_SUMMARY"], "category": "api"}
+{"query_id": "ADV-0052", "query": "Which service should handle: retrieve data for inventory & warehouse?", "relevant_ids": ["API_INVENTORY_LIST"], "category": "api"}
+{"query_id": "ADV-0053", "query": "Which service should handle: retrieve data for supplier management?", "relevant_ids": ["API_SUPPLIERS_LIST"], "category": "api"}
+{"query_id": "ADV-0054", "query": "Which service should handle: retrieve data for procurement?", "relevant_ids": ["API_PURCHASE_ORDERS_LIST"], "category": "api"}
+{"query_id": "ADV-0055", "query": "Which service should handle: retrieve data for sales & orders?", "relevant_ids": ["API_SALES_LIST"], "category": "api"}
+{"query_id": "ADV-0056", "query": "Which service should handle: retrieve data for logistics & deliveries?", "relevant_ids": ["API_DELIVERIES_LIST"], "category": "api"}
+{"query_id": "ADV-0057", "query": "Which service should handle: retrieve data for finance & cash flow?", "relevant_ids": ["API_FINANCE_LIST"], "category": "api"}
+{"query_id": "ADV-0058", "query": "Which service should handle: retrieve data for analytics & reports?", "relevant_ids": ["API_ANALYTICS_SUMMARY"], "category": "api"}
+{"query_id": "ADV-0059", "query": "Which service should handle: retrieve data for approvals?", "relevant_ids": ["API_APPROVALS_LIST"], "category": "api"}
+{"query_id": "ADV-0060", "query": "Which service should handle: retrieve data for agent activity?", "relevant_ids": ["API_AGENT_ACTIVITY_LIST"], "category": "api"}
+{"query_id": "ADV-0061", "query": "Where can I filter business overview by date range?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "filter"}
+{"query_id": "ADV-0062", "query": "Where can I filter business overview by region?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "filter"}
+{"query_id": "ADV-0063", "query": "Where can I filter business overview by status?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "filter"}
+{"query_id": "ADV-0064", "query": "Where can I filter inventory & warehouse by date range?", "relevant_ids": ["PAGE_INVENTORY"], "category": "filter"}
+{"query_id": "ADV-0065", "query": "Where can I filter inventory & warehouse by region?", "relevant_ids": ["PAGE_INVENTORY"], "category": "filter"}
+{"query_id": "ADV-0066", "query": "Where can I filter inventory & warehouse by status?", "relevant_ids": ["PAGE_INVENTORY"], "category": "filter"}
+{"query_id": "ADV-0067", "query": "Where can I filter supplier management by date range?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "filter"}
+{"query_id": "ADV-0068", "query": "Where can I filter supplier management by region?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "filter"}
+{"query_id": "ADV-0069", "query": "Where can I filter supplier management by status?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "filter"}
+{"query_id": "ADV-0070", "query": "Where can I filter procurement by date range?", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "filter"}
+{"query_id": "ADV-0071", "query": "Where can I filter procurement by region?", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "filter"}
+{"query_id": "ADV-0072", "query": "Where can I filter procurement by status?", "relevant_ids": ["PAGE_PROCUREMENT"], "category": "filter"}
+{"query_id": "ADV-0073", "query": "Where can I filter sales & orders by date range?", "relevant_ids": ["PAGE_SALES"], "category": "filter"}
+{"query_id": "ADV-0074", "query": "Where can I filter sales & orders by region?", "relevant_ids": ["PAGE_SALES"], "category": "filter"}
+{"query_id": "ADV-0075", "query": "Where can I filter sales & orders by status?", "relevant_ids": ["PAGE_SALES"], "category": "filter"}
+{"query_id": "ADV-0076", "query": "Where can I filter logistics & deliveries by date range?", "relevant_ids": ["PAGE_LOGISTICS"], "category": "filter"}
+{"query_id": "ADV-0077", "query": "Where can I filter logistics & deliveries by region?", "relevant_ids": ["PAGE_LOGISTICS"], "category": "filter"}
+{"query_id": "ADV-0078", "query": "Where can I filter logistics & deliveries by status?", "relevant_ids": ["PAGE_LOGISTICS"], "category": "filter"}
+{"query_id": "ADV-0079", "query": "Where can I filter finance & cash flow by date range?", "relevant_ids": ["PAGE_FINANCE"], "category": "filter"}
+{"query_id": "ADV-0080", "query": "Where can I filter finance & cash flow by region?", "relevant_ids": ["PAGE_FINANCE"], "category": "filter"}
+{"query_id": "ADV-0081", "query": "Where can I filter finance & cash flow by status?", "relevant_ids": ["PAGE_FINANCE"], "category": "filter"}
+{"query_id": "ADV-0082", "query": "Where can I filter analytics & reports by date range?", "relevant_ids": ["PAGE_ANALYTICS"], "category": "filter"}
+{"query_id": "ADV-0083", "query": "Where can I filter analytics & reports by region?", "relevant_ids": ["PAGE_ANALYTICS"], "category": "filter"}
+{"query_id": "ADV-0084", "query": "Where can I filter analytics & reports by status?", "relevant_ids": ["PAGE_ANALYTICS"], "category": "filter"}
+{"query_id": "ADV-0085", "query": "Where can I filter approvals by date range?", "relevant_ids": ["PAGE_APPROVALS"], "category": "filter"}
+{"query_id": "ADV-0086", "query": "Where can I filter approvals by region?", "relevant_ids": ["PAGE_APPROVALS"], "category": "filter"}
+{"query_id": "ADV-0087", "query": "Where can I filter approvals by status?", "relevant_ids": ["PAGE_APPROVALS"], "category": "filter"}
+{"query_id": "ADV-0088", "query": "Where can I filter agent activity by date range?", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "filter"}
+{"query_id": "ADV-0089", "query": "Where can I filter agent activity by region?", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "filter"}
+{"query_id": "ADV-0090", "query": "Where can I filter agent activity by status?", "relevant_ids": ["PAGE_AGENT_ACTIVITY"], "category": "filter"}
+{"query_id": "ADV-0091", "query": "Please help me with this: Find the data grid for supplier management", "relevant_ids": ["PAGE_SUPPLIERS_GRID"], "category": "widget"}
+{"query_id": "ADV-0092", "query": "Please help me with this: Which vendors are dependable?", "relevant_ids": ["PAGE_SUPPLIERS"], "category": "page"}
+{"query_id": "ADV-0093", "query": "Please help me with this: Where can I filter inventory & warehouse by status?", "relevant_ids": ["PAGE_INVENTORY"], "category": "filter"}
+{"query_id": "ADV-0094", "query": "Please help me with this: Where can I filter business overview by region?", "relevant_ids": ["PAGE_DASHBOARD"], "category": "filter"}
+{"query_id": "ADV-0095", "query": "Please help me with this: Find the chart for approvals", "relevant_ids": ["PAGE_APPROVALS_CHART"], "category": "widget"}
+{"query_id": "ADV-0096", "query": "Please help me with this: Which service should handle: retrieve data for supplier management?", "relevant_ids": ["API_SUPPLIERS_LIST"], "category": "api"}
+{"query_id": "ADV-0097", "query": "Please help me with this: Where do I check warehouse stock?", "relevant_ids": ["PAGE_INVENTORY"], "category": "page"}
+{"query_id": "ADV-0098", "query": "Please help me with this: Show transportation delays", "relevant_ids": ["PAGE_LOGISTICS"], "category": "page"}
+{"query_id": "ADV-0099", "query": "Please help me with this: What are our outstanding expenses?", "relevant_ids": ["PAGE_FINANCE"], "category": "page"}
+{"query_id": "ADV-0100", "query": "Please help me with this: Which service should handle: retrieve data for supplier management?", "relevant_ids": ["API_SUPPLIERS_LIST"], "category": "api"}
