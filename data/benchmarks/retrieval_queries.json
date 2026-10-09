@@ -1,0 +1,62 @@
+[
+  {
+    "query": "Show me products that need replenishment",
+    "expected_page_id": "PAGE_INVENTORY"
+  },
+  {
+    "query": "Which items are running low on stock?",
+    "expected_page_id": "PAGE_INVENTORY"
+  },
+  {
+    "query": "Check available warehouse stock",
+    "expected_page_id": "PAGE_INVENTORY"
+  },
+  {
+    "query": "Compare vendors based on prices",
+    "expected_page_id": "PAGE_SUPPLIERS"
+  },
+  {
+    "query": "Which supplier delivers the fastest?",
+    "expected_page_id": "PAGE_SUPPLIERS"
+  },
+  {
+    "query": "Show procurement orders awaiting approval",
+    "expected_page_id": "PAGE_PROCUREMENT"
+  },
+  {
+    "query": "Prepare a purchase order",
+    "expected_page_id": "PAGE_PROCUREMENT"
+  },
+  {
+    "query": "Analyze customer sales over time",
+    "expected_page_id": "PAGE_SALES"
+  },
+  {
+    "query": "Which deliveries are delayed?",
+    "expected_page_id": "PAGE_LOGISTICS"
+  },
+  {
+    "query": "Show shipments that missed their expected date",
+    "expected_page_id": "PAGE_LOGISTICS"
+  },
+  {
+    "query": "Calculate business cash flow",
+    "expected_page_id": "PAGE_FINANCE"
+  },
+  {
+    "query": "Show outstanding business expenses",
+    "expected_page_id": "PAGE_FINANCE"
+  },
+  {
+    "query": "Compare business performance across periods",
+    "expected_page_id": "PAGE_ANALYTICS"
+  },
+  {
+    "query": "Show the overall business KPIs",
+    "expected_page_id": "PAGE_DASHBOARD"
+  },
+  {
+    "query": "Give me a business overview",
+    "expected_page_id": "PAGE_DASHBOARD"
+  }
+]
