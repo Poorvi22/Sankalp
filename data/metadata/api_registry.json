@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "apis": [
+    {
+      "api_id": "API_DASHBOARD_SUMMARY",
+      "method": "GET",
+      "path": "/api/dashboard",
+      "description": "Retrieve data for Business Overview",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_INVENTORY_LIST",
+      "method": "GET",
+      "path": "/api/inventory",
+      "description": "Retrieve data for Inventory & Warehouse",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_SUPPLIERS_LIST",
+      "method": "GET",
+      "path": "/api/suppliers",
+      "description": "Retrieve data for Supplier Management",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_PURCHASE_ORDERS_LIST",
+      "method": "GET",
+      "path": "/api/procurement",
+      "description": "Retrieve data for Procurement",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_SALES_LIST",
+      "method": "GET",
+      "path": "/api/sales",
+      "description": "Retrieve data for Sales & Orders",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_DELIVERIES_LIST",
+      "method": "GET",
+      "path": "/api/logistics",
+      "description": "Retrieve data for Logistics & Deliveries",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_FINANCE_LIST",
+      "method": "GET",
+      "path": "/api/finance",
+      "description": "Retrieve data for Finance & Cash Flow",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_ANALYTICS_SUMMARY",
+      "method": "GET",
+      "path": "/api/analytics",
+      "description": "Retrieve data for Analytics & Reports",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_APPROVALS_LIST",
+      "method": "GET",
+      "path": "/api/approvals",
+      "description": "Retrieve data for Approvals",
+      "required_permission": "business.read",
+      "read_only": true
+    },
+    {
+      "api_id": "API_AGENT_ACTIVITY_LIST",
+      "method": "GET",
+      "path": "/api/agent-activity",
+      "description": "Retrieve data for Agent Activity",
+      "required_permission": "business.read",
+      "read_only": true
+    }
+  ]
+}

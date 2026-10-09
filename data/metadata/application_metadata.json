@@ -1,0 +1,396 @@
+{
+  "application": "BizPilot AI",
+  "version": "1.0.0",
+  "pages": [
+    {
+      "page_id": "PAGE_DASHBOARD",
+      "name": "Business Overview",
+      "route": "/dashboard",
+      "description": "Executive KPIs, revenue, alerts and business health",
+      "widgets": [
+        {
+          "widget_id": "PAGE_DASHBOARD_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Business Overview"
+        },
+        {
+          "widget_id": "PAGE_DASHBOARD_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Business Overview"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_DASHBOARD_SUMMARY"
+      ]
+    },
+    {
+      "page_id": "PAGE_INVENTORY",
+      "name": "Inventory & Warehouse",
+      "route": "/inventory",
+      "description": "Products, stock levels, reorder points and warehouses",
+      "widgets": [
+        {
+          "widget_id": "PAGE_INVENTORY_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Inventory & Warehouse"
+        },
+        {
+          "widget_id": "PAGE_INVENTORY_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Inventory & Warehouse"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_INVENTORY_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_SUPPLIERS",
+      "name": "Supplier Management",
+      "route": "/suppliers",
+      "description": "Supplier prices, reliability, lead times and offers",
+      "widgets": [
+        {
+          "widget_id": "PAGE_SUPPLIERS_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Supplier Management"
+        },
+        {
+          "widget_id": "PAGE_SUPPLIERS_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Supplier Management"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_SUPPLIERS_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_PROCUREMENT",
+      "name": "Procurement",
+      "route": "/procurement",
+      "description": "Purchase orders, draft creation and approvals",
+      "widgets": [
+        {
+          "widget_id": "PAGE_PROCUREMENT_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Procurement"
+        },
+        {
+          "widget_id": "PAGE_PROCUREMENT_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Procurement"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_PURCHASE_ORDERS_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_SALES",
+      "name": "Sales & Orders",
+      "route": "/sales",
+      "description": "Customer orders, revenue and sales performance",
+      "widgets": [
+        {
+          "widget_id": "PAGE_SALES_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Sales & Orders"
+        },
+        {
+          "widget_id": "PAGE_SALES_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Sales & Orders"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_SALES_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_LOGISTICS",
+      "name": "Logistics & Deliveries",
+      "route": "/logistics",
+      "description": "Shipment tracking, delivery dates and delays",
+      "widgets": [
+        {
+          "widget_id": "PAGE_LOGISTICS_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Logistics & Deliveries"
+        },
+        {
+          "widget_id": "PAGE_LOGISTICS_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Logistics & Deliveries"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_DELIVERIES_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_FINANCE",
+      "name": "Finance & Cash Flow",
+      "route": "/finance",
+      "description": "Cash receipts, payments, expenses and cash flow",
+      "widgets": [
+        {
+          "widget_id": "PAGE_FINANCE_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Finance & Cash Flow"
+        },
+        {
+          "widget_id": "PAGE_FINANCE_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Finance & Cash Flow"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_FINANCE_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_ANALYTICS",
+      "name": "Analytics & Reports",
+      "route": "/analytics",
+      "description": "Business trends, comparisons and historical reports",
+      "widgets": [
+        {
+          "widget_id": "PAGE_ANALYTICS_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Analytics & Reports"
+        },
+        {
+          "widget_id": "PAGE_ANALYTICS_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Analytics & Reports"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_ANALYTICS_SUMMARY"
+      ]
+    },
+    {
+      "page_id": "PAGE_APPROVALS",
+      "name": "Approvals",
+      "route": "/approvals",
+      "description": "Purchase order approvals and pending decisions",
+      "widgets": [
+        {
+          "widget_id": "PAGE_APPROVALS_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Approvals"
+        },
+        {
+          "widget_id": "PAGE_APPROVALS_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Approvals"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_APPROVALS_LIST"
+      ]
+    },
+    {
+      "page_id": "PAGE_AGENT_ACTIVITY",
+      "name": "Agent Activity",
+      "route": "/agent-activity",
+      "description": "Agent task history, execution logs and latency",
+      "widgets": [
+        {
+          "widget_id": "PAGE_AGENT_ACTIVITY_GRID",
+          "type": "data_grid",
+          "description": "Records displayed on Agent Activity"
+        },
+        {
+          "widget_id": "PAGE_AGENT_ACTIVITY_CHART",
+          "type": "chart",
+          "description": "Analytics displayed on Agent Activity"
+        }
+      ],
+      "filters": [
+        {
+          "filter_id": "date_range",
+          "type": "date_range"
+        },
+        {
+          "filter_id": "region",
+          "type": "multi_select"
+        },
+        {
+          "filter_id": "status",
+          "type": "multi_select"
+        }
+      ],
+      "sort_options": [
+        "date_asc",
+        "date_desc"
+      ],
+      "api_ids": [
+        "API_AGENT_ACTIVITY_LIST"
+      ]
+    }
+  ]
+}
