@@ -1,0 +1,8 @@
+
+fastapi
+uvicorn[standard]
+sqlalchemy
+pwdlib[argon2]
+python-jose[cryptography]
+pytest
+httpx
