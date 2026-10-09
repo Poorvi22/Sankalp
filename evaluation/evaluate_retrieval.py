@@ -4,371 +4,181 @@ import argparse
 import json
 import statistics
 
-# --------------------------------------------------
-# 1. PROJECT PATHS
-# --------------------------------------------------
-
 ROOT = Path(__file__).resolve().parents[1]
-
 RESULTS = ROOT / "evaluation" / "results"
-RESULTS.mkdir(parents=True, exist_ok=True)
+GOLD = ROOT / "data" / "benchmarks" / "retrieval_ground_truth.jsonl"
 
-GOLD = (
-    ROOT / "data" / "benchmarks" /
-    "retrieval_ground_truth.jsonl"
-)
-
-# --------------------------------------------------
-# 2. COMMAND-LINE ARGUMENTS
-# --------------------------------------------------
-
-parser = argparse.ArgumentParser(
-    description="BizPilot AI Retrieval KPI Evaluator"
-)
-
+parser = argparse.ArgumentParser()
 parser.add_argument(
     "--method",
     choices=["tfidf", "faiss", "hybrid"],
-    default="tfidf",
-    help="Retrieval method to evaluate"
+    default="faiss"
 )
-
 args = parser.parse_args()
 
-# --------------------------------------------------
-# 3. SELECT PREDICTION FILE
-# --------------------------------------------------
-
-prediction_files = {
+files = {
     "tfidf": "retrieval_predictions.jsonl",
     "faiss": "faiss_predictions.jsonl",
     "hybrid": "hybrid_predictions.jsonl"
 }
 
-PRED = RESULTS / prediction_files[args.method]
+PRED = RESULTS / files[args.method]
+REPORT = RESULTS / f"{args.method}_retrieval_report.json"
 
-REPORT = RESULTS / (
-    f"{args.method}_retrieval_report.json"
-)
-
-# --------------------------------------------------
-# 4. LOAD JSONL
-# --------------------------------------------------
 
 def load_jsonl(path):
     if not path.exists():
-        raise SystemExit(
-            f"\nERROR: File not found: {path}\n"
-            "Generate predictions before evaluation."
-        )
-
-    records = []
+        raise SystemExit(f"Missing file: {path}")
 
     with open(path, encoding="utf-8") as f:
-        for line_number, line in enumerate(f, 1):
-            if not line.strip():
-                continue
-
-            try:
-                records.append(json.loads(line))
-            except json.JSONDecodeError as exc:
-                raise ValueError(
-                    f"Invalid JSON at {path}, "
-                    f"line {line_number}"
-                ) from exc
-
-    return records
+        return [
+            json.loads(line)
+            for line in f
+            if line.strip()
+        ]
 
 
 gold = load_jsonl(GOLD)
 pred = load_jsonl(PRED)
 
 if not gold:
-    raise SystemExit("ERROR: Benchmark is empty.")
-
-# --------------------------------------------------
-# 5. VALIDATE IDS
-# --------------------------------------------------
+    raise SystemExit("Ground truth is empty.")
 
 gold_ids = [r["query_id"] for r in gold]
 pred_ids = [r["query_id"] for r in pred]
 
-assert len(gold_ids) == len(set(gold_ids)), (
-    "Duplicate query IDs in ground truth"
-)
+if len(gold_ids) != len(set(gold_ids)):
+    raise ValueError("Duplicate ground-truth query IDs")
 
-assert len(pred_ids) == len(set(pred_ids)), (
-    "Duplicate query IDs in predictions"
-)
+if len(pred_ids) != len(set(pred_ids)):
+    raise ValueError("Duplicate prediction query IDs")
 
-predictions = {
-    r["query_id"]: r
-    for r in pred
-}
+unknown = set(pred_ids) - set(gold_ids)
+if unknown:
+    raise ValueError(f"Unknown prediction IDs: {unknown}")
 
-unknown_ids = set(pred_ids) - set(gold_ids)
+pred_map = {r["query_id"]: r for r in pred}
 
-if unknown_ids:
-    raise ValueError(
-        f"Unknown prediction IDs: {sorted(unknown_ids)}"
-    )
-
-# --------------------------------------------------
-# 6. INITIALIZE KPI STORAGE
-# --------------------------------------------------
-
-precision_scores = []
-recall_scores = []
-reciprocal_ranks = []
-
-hit_at_1 = []
-hit_at_5 = []
-
+precision_1 = []
+recall_3 = []
+reciprocal_rank = []
+hit_1 = []
+hit_5 = []
 latencies = []
 
-missing_predictions = 0
-
-# --------------------------------------------------
-# 7. EVALUATE EVERY QUERY
-# --------------------------------------------------
-
 for case in gold:
-
-    query_id = case["query_id"]
     relevant = set(case["relevant_ids"])
-
     if not relevant:
-        raise ValueError(
-            f"No relevant IDs for {query_id}"
-        )
+        raise ValueError("Empty relevant IDs")
 
-    prediction = predictions.get(query_id)
-
-    if prediction is None:
-        missing_predictions += 1
-        retrieved = []
-    else:
-        retrieved = prediction.get(
-            "retrieved_ids", []
-        )[:5]
-
-        latency = prediction.get(
-            "retrieval_latency_ms"
-        )
-
-        if (
-            isinstance(latency, (int, float))
-            and not isinstance(latency, bool)
-            and latency >= 0
-        ):
-            latencies.append(float(latency))
+    result = pred_map.get(case["query_id"], {})
+    retrieved = result.get("retrieved_ids", [])
 
     if not isinstance(retrieved, list):
-        raise ValueError(
-            f"Invalid retrieved_ids for {query_id}"
-        )
+        raise ValueError("retrieved_ids must be a list")
 
     if len(retrieved) != len(set(retrieved)):
-        raise ValueError(
-            f"Duplicate retrieved IDs for {query_id}"
-        )
+        raise ValueError("Duplicate retrieved IDs")
 
-    # Precision@5
-    hits = len(
-        relevant.intersection(retrieved)
+    top1 = retrieved[:1]
+    top3 = retrieved[:3]
+    top5 = retrieved[:5]
+
+    precision_1.append(
+        len(relevant.intersection(top1))
     )
 
-    precision_scores.append(
-        hits / 5
+    recall_3.append(
+        len(relevant.intersection(top3)) / len(relevant)
     )
 
-    # Recall@5
-    recall_scores.append(
-        hits / len(relevant)
+    hit_1.append(
+        int(bool(top1) and top1[0] in relevant)
     )
 
-    # Hit@1
-    hit_at_1.append(
-        int(
-            bool(retrieved)
-            and retrieved[0] in relevant
-        )
+    hit_5.append(
+        int(any(x in relevant for x in top5))
     )
 
-    # Hit@5
-    hit_at_5.append(
-        int(
-            any(
-                item in relevant
-                for item in retrieved
-            )
-        )
-    )
-
-    # Reciprocal Rank
     rank = next(
         (
-            i
-            for i, item in enumerate(retrieved, 1)
+            i for i, item in enumerate(retrieved, 1)
             if item in relevant
         ),
         None
     )
 
-    reciprocal_ranks.append(
+    reciprocal_rank.append(
         1 / rank if rank else 0
     )
 
-# --------------------------------------------------
-# 8. CALCULATE PERCENTILES
-# --------------------------------------------------
+    latency = result.get("retrieval_latency_ms")
+    if (
+        isinstance(latency, (int, float))
+        and not isinstance(latency, bool)
+        and latency >= 0
+    ):
+        latencies.append(float(latency))
+
+
+def average(values):
+    return round(statistics.mean(values), 4)
+
 
 def percentile(values, p):
     if not values:
         return None
 
-    values = sorted(values)
-
-    position = (
-        (len(values) - 1) * p / 100
-    )
-
+    ordered = sorted(values)
+    position = (len(ordered) - 1) * p / 100
     lower = int(position)
-    upper = min(
-        lower + 1,
-        len(values) - 1
-    )
-
+    upper = min(lower + 1, len(ordered) - 1)
     fraction = position - lower
 
-    result = (
-        values[lower] * (1 - fraction)
-        + values[upper] * fraction
+    return round(
+        ordered[lower] * (1 - fraction)
+        + ordered[upper] * fraction,
+        3
     )
 
-    return round(result, 3)
-
-
-# --------------------------------------------------
-# 9. GENERATE KPI REPORT
-# --------------------------------------------------
 
 report = {
     "project": "BizPilot AI",
     "problem": "5A Context-Aware Application Agent",
-    "retrieval_method": args.method,
-
+    "method": args.method,
     "total_queries": len(gold),
     "predictions_received": len(pred),
-    "missing_predictions": missing_predictions,
-
-    "hit_at_1": round(
-        statistics.mean(hit_at_1), 4
-    ),
-
-    "hit_at_5": round(
-        statistics.mean(hit_at_5), 4
-    ),
-
-    "precision_at_5": round(
-        statistics.mean(precision_scores), 4
-    ),
-
-    "recall_at_5": round(
-        statistics.mean(recall_scores), 4
-    ),
-
-    "mrr_at_5": round(
-        statistics.mean(reciprocal_ranks), 4
-    ),
-
+    "precision_at_1": average(precision_1),
+    "recall_at_3": average(recall_3),
+    "mrr": average(reciprocal_rank),
+    "hit_at_1": average(hit_1),
+    "hit_at_5": average(hit_5),
     "latency_samples": len(latencies),
-
     "latency_coverage": round(
         len(latencies) / len(gold), 4
     ),
-
     "average_retrieval_ms": (
         round(statistics.mean(latencies), 3)
         if latencies else None
     ),
-
-    "p50_retrieval_ms": percentile(
-        latencies, 50
-    ),
-
-    "p95_retrieval_ms": percentile(
-        latencies, 95
-    )
+    "p50_retrieval_ms": percentile(latencies, 50),
+    "p95_retrieval_ms": percentile(latencies, 95)
 }
 
-# --------------------------------------------------
-# 10. SAVE REPORT
-# --------------------------------------------------
+RESULTS.mkdir(parents=True, exist_ok=True)
 
-with open(
-    REPORT,
-    "w",
-    encoding="utf-8"
-) as f:
-    json.dump(
-        report,
-        f,
-        indent=2
-    )
+with open(REPORT, "w", encoding="utf-8") as f:
+    json.dump(report, f, indent=2)
 
-# --------------------------------------------------
-# 11. DISPLAY RESULTS
-# --------------------------------------------------
-
-print("\n" + "=" * 55)
-print("BIZPILOT AI — RETRIEVAL KPI EVALUATION")
-print("=" * 55)
-
+print("\nBIZPILOT AI — RETRIEVAL KPI")
+print("=" * 50)
 print("Method:", args.method.upper())
-print("Total queries:", len(gold))
-print("Missing predictions:", missing_predictions)
-
-print("\nACCURACY METRICS")
-print("-" * 55)
-
-for metric in [
-    "hit_at_1",
-    "hit_at_5",
-    "precision_at_5",
-    "recall_at_5",
-    "mrr_at_5"
-]:
-    print(
-        f"{metric:<25}"
-        f"{report[metric] * 100:.2f}%"
-    )
-
-print("\nLATENCY METRICS")
-print("-" * 55)
-
-if latencies:
-    print(
-        "Average retrieval:",
-        report["average_retrieval_ms"],
-        "ms"
-    )
-
-    print(
-        "P50 retrieval:",
-        report["p50_retrieval_ms"],
-        "ms"
-    )
-
-    print(
-        "P95 retrieval:",
-        report["p95_retrieval_ms"],
-        "ms"
-    )
-else:
-    print(
-        "No per-query latency measurements available."
-    )
-
-print("\nReport saved:", REPORT)
-print("=" * 55)
+print("Queries:", len(gold))
+print("Precision@1:", f"{report['precision_at_1']:.2%}")
+print("Recall@3:", f"{report['recall_at_3']:.2%}")
+print("MRR:", f"{report['mrr']:.2%}")
+print("Hit@1:", f"{report['hit_at_1']:.2%}")
+print("Hit@5:", f"{report['hit_at_5']:.2%}")
+print("P50 latency:", report["p50_retrieval_ms"], "ms")
+print("P95 latency:", report["p95_retrieval_ms"], "ms")
+print("Saved:", REPORT)
