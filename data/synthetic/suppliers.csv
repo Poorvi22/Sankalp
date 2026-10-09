@@ -1,0 +1,51 @@
+supplier_id,supplier_name,lead_time_days,reliability_score
+SUP-001,"Choudhury, Bakshi and Maharaj",6,0.87
+SUP-002,Kapoor and Sons,4,0.79
+SUP-003,"Chaudry, Chahal and Sami",14,0.89
+SUP-004,Balan Inc,12,0.94
+SUP-005,Kaul PLC,23,0.9
+SUP-006,"Bala, Issac and Saini",25,0.99
+SUP-007,Sen PLC,18,0.73
+SUP-008,Ahuja-Dutta,23,0.82
+SUP-009,"Sami, Oak and Mall",13,0.71
+SUP-010,Kale LLC,11,0.75
+SUP-011,Chanda Group,8,0.8
+SUP-012,Parmer LLC,17,0.76
+SUP-013,"Lalla, Bassi and Sharaf",6,0.74
+SUP-014,"Dash, Radhakrishnan and Brar",11,0.94
+SUP-015,"Memon, Pathak and Handa",5,0.85
+SUP-016,"Boase, Bath and Kari",19,0.94
+SUP-017,Buch-Kaul,18,0.71
+SUP-018,Rai LLC,12,0.95
+SUP-019,Patla-Gaba,21,0.74
+SUP-020,Pant-Kadakia,14,0.74
+SUP-021,"Loke, Bora and Garg",7,0.94
+SUP-022,"Konda, Gade and Shere",21,0.93
+SUP-023,Madan-Kanda,7,0.91
+SUP-024,"Nair, Bhalla and Karnik",3,0.82
+SUP-025,Mutti Group,23,0.91
+SUP-026,Bhatti-Kakar,16,0.88
+SUP-027,"Murty, Kala and Tata",25,0.93
+SUP-028,Shanker-Dhar,9,0.85
+SUP-029,Dewan-Koshy,11,0.98
+SUP-030,"Yohannan, Lall and Sangha",17,0.96
+SUP-031,"Rastogi, Pathak and Kanda",8,0.81
+SUP-032,Upadhyay Group,20,0.99
+SUP-033,Batta Inc,16,0.92
+SUP-034,Dutta Ltd,14,0.85
+SUP-035,Bhatt-Rajan,15,0.98
+SUP-036,Sidhu-Wadhwa,8,0.93
+SUP-037,Apte-Contractor,6,0.95
+SUP-038,"Yadav, Loke and Oak",3,0.89
+SUP-039,Memon Group,13,0.86
+SUP-040,Setty Inc,5,0.91
+SUP-041,"Lall, Tella and Gokhale",18,0.95
+SUP-042,"Cherian, Misra and Tripathi",11,0.72
+SUP-043,"Issac, Dua and Prakash",7,0.78
+SUP-044,Zacharia PLC,18,0.74
+SUP-045,Naik Group,15,0.73
+SUP-046,Choudhury LLC,9,0.94
+SUP-047,Khatri-Bhardwaj,13,0.97
+SUP-048,Brar Inc,15,0.72
+SUP-049,"Sunder, Biswas and Walia",18,0.81
+SUP-050,Dave Ltd,14,0.99
