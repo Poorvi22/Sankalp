@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+PyJWT
+pwdlib[argon2]
+pydantic
+sentence-transformers
+faiss-cpu
+numpy
+psycopg[binary]

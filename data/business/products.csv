@@ -1,0 +1,501 @@
+product_id,product_name,category,unit_cost,unit_price,reorder_point,target_stock
+PRD-0001,Product 001,Electronics,323.32,531.84,82,264
+PRD-0002,Product 002,Electronics,78.37,125.86,42,452
+PRD-0003,Product 003,Electronics,216.74,272.27,79,408
+PRD-0004,Product 004,Industrial Parts,304.99,402.37,127,262
+PRD-0005,Product 005,Packaging,230.11,387.89,21,538
+PRD-0006,Product 006,Safety,404.85,568.47,59,260
+PRD-0007,Product 007,Packaging,479.03,604.21,117,199
+PRD-0008,Product 008,Packaging,185.9,290.42,31,523
+PRD-0009,Product 009,Electronics,235.12,419.42,116,190
+PRD-0010,Product 010,Industrial Parts,280.5,485.62,112,445
+PRD-0011,Product 011,Electronics,104.22,127.93,78,545
+PRD-0012,Product 012,Electronics,151.8,260.06,45,344
+PRD-0013,Product 013,Packaging,146.21,189.72,110,257
+PRD-0014,Product 014,Electronics,338.39,529.74,63,423
+PRD-0015,Product 015,Office Supplies,367.27,542.59,89,477
+PRD-0016,Product 016,Office Supplies,347.2,559.26,34,267
+PRD-0017,Product 017,Packaging,412.68,594.55,36,258
+PRD-0018,Product 018,Industrial Parts,457.44,789.46,100,258
+PRD-0019,Product 019,Safety,331.16,573.18,137,223
+PRD-0020,Product 020,Office Supplies,139.79,230.23,87,532
+PRD-0021,Product 021,Industrial Parts,296.45,426.78,76,220
+PRD-0022,Product 022,Electronics,259.67,429.36,48,228
+PRD-0023,Product 023,Safety,317.45,494.54,118,345
+PRD-0024,Product 024,Safety,301.99,458.26,22,498
+PRD-0025,Product 025,Industrial Parts,363.15,599.39,107,207
+PRD-0026,Product 026,Office Supplies,153.82,226.46,87,406
+PRD-0027,Product 027,Industrial Parts,383.36,669.95,96,580
+PRD-0028,Product 028,Industrial Parts,323.09,426.27,115,540
+PRD-0029,Product 029,Industrial Parts,89.16,156.13,102,400
+PRD-0030,Product 030,Packaging,19.54,33.75,98,272
+PRD-0031,Product 031,Industrial Parts,38.38,67.86,41,524
+PRD-0032,Product 032,Electronics,248.14,443.37,52,215
+PRD-0033,Product 033,Industrial Parts,333.28,432.96,128,258
+PRD-0034,Product 034,Office Supplies,465.17,757.19,122,493
+PRD-0035,Product 035,Safety,328.44,571.41,135,211
+PRD-0036,Product 036,Electronics,131.47,184.43,78,451
+PRD-0037,Product 037,Electronics,117.91,191.57,35,267
+PRD-0038,Product 038,Electronics,43.03,73.83,38,413
+PRD-0039,Product 039,Safety,126.62,168.22,53,520
+PRD-0040,Product 040,Industrial Parts,468.4,724.02,82,551
+PRD-0041,Product 041,Safety,241.76,317.73,44,487
+PRD-0042,Product 042,Safety,221.22,320.03,33,494
+PRD-0043,Product 043,Electronics,330.19,408.24,106,559
+PRD-0044,Product 044,Office Supplies,432.22,568.35,134,221
+PRD-0045,Product 045,Packaging,216.72,320.22,39,376
+PRD-0046,Product 046,Industrial Parts,405.93,510.96,23,197
+PRD-0047,Product 047,Office Supplies,463.92,603.0,144,396
+PRD-0048,Product 048,Safety,114.74,199.82,62,344
+PRD-0049,Product 049,Safety,11.06,15.03,136,296
+PRD-0050,Product 050,Industrial Parts,217.27,347.01,144,229
+PRD-0051,Product 051,Office Supplies,103.05,183.56,35,532
+PRD-0052,Product 052,Electronics,163.67,253.77,148,586
+PRD-0053,Product 053,Electronics,270.25,480.09,40,585
+PRD-0054,Product 054,Industrial Parts,101.05,125.38,80,356
+PRD-0055,Product 055,Industrial Parts,68.74,92.64,30,467
+PRD-0056,Product 056,Industrial Parts,50.17,77.22,100,283
+PRD-0057,Product 057,Packaging,110.09,147.87,121,217
+PRD-0058,Product 058,Packaging,339.13,499.99,38,154
+PRD-0059,Product 059,Industrial Parts,234.56,421.66,38,425
+PRD-0060,Product 060,Packaging,114.45,146.44,109,185
+PRD-0061,Product 061,Packaging,440.84,604.39,132,576
+PRD-0062,Product 062,Packaging,276.18,432.78,22,491
+PRD-0063,Product 063,Packaging,410.38,721.88,46,599
+PRD-0064,Product 064,Electronics,75.8,131.42,59,289
+PRD-0065,Product 065,Office Supplies,148.06,241.42,72,501
+PRD-0066,Product 066,Packaging,320.78,482.21,84,583
+PRD-0067,Product 067,Safety,34.89,59.23,31,151
+PRD-0068,Product 068,Office Supplies,173.44,274.43,87,232
+PRD-0069,Product 069,Industrial Parts,373.2,605.85,22,207
+PRD-0070,Product 070,Office Supplies,46.87,71.59,114,448
+PRD-0071,Product 071,Safety,280.74,358.36,98,336
+PRD-0072,Product 072,Electronics,450.5,783.58,73,499
+PRD-0073,Product 073,Electronics,132.27,186.79,124,467
+PRD-0074,Product 074,Office Supplies,377.24,648.39,65,361
+PRD-0075,Product 075,Packaging,22.15,36.98,125,560
+PRD-0076,Product 076,Office Supplies,338.25,460.05,47,345
+PRD-0077,Product 077,Safety,437.36,583.2,137,329
+PRD-0078,Product 078,Office Supplies,159.54,212.79,69,354
+PRD-0079,Product 079,Electronics,170.85,304.14,91,329
+PRD-0080,Product 080,Safety,324.33,521.43,104,164
+PRD-0081,Product 081,Packaging,66.52,86.95,87,169
+PRD-0082,Product 082,Safety,63.12,88.84,100,373
+PRD-0083,Product 083,Industrial Parts,307.04,389.75,68,280
+PRD-0084,Product 084,Safety,31.75,38.13,70,336
+PRD-0085,Product 085,Packaging,221.34,348.37,51,518
+PRD-0086,Product 086,Industrial Parts,451.02,624.92,124,317
+PRD-0087,Product 087,Packaging,207.18,317.53,69,365
+PRD-0088,Product 088,Safety,335.82,539.46,64,465
+PRD-0089,Product 089,Safety,288.86,441.6,20,305
+PRD-0090,Product 090,Safety,150.59,251.7,102,388
+PRD-0091,Product 091,Office Supplies,226.48,341.24,63,487
+PRD-0092,Product 092,Industrial Parts,51.55,82.39,105,197
+PRD-0093,Product 093,Office Supplies,411.03,659.16,77,562
+PRD-0094,Product 094,Electronics,107.57,132.07,141,462
+PRD-0095,Product 095,Electronics,426.37,628.15,69,517
+PRD-0096,Product 096,Safety,351.21,505.67,57,485
+PRD-0097,Product 097,Electronics,346.93,578.35,76,240
+PRD-0098,Product 098,Industrial Parts,404.01,597.42,83,584
+PRD-0099,Product 099,Office Supplies,69.47,116.77,101,536
+PRD-0100,Product 100,Industrial Parts,446.8,754.65,149,368
+PRD-0101,Product 101,Industrial Parts,416.98,611.94,60,530
+PRD-0102,Product 102,Safety,432.13,585.76,83,580
+PRD-0103,Product 103,Industrial Parts,322.45,480.69,81,290
+PRD-0104,Product 104,Packaging,225.54,302.38,105,313
+PRD-0105,Product 105,Electronics,447.58,574.26,79,346
+PRD-0106,Product 106,Office Supplies,350.04,433.54,124,319
+PRD-0107,Product 107,Safety,275.88,341.36,127,349
+PRD-0108,Product 108,Industrial Parts,453.37,801.39,25,588
+PRD-0109,Product 109,Industrial Parts,441.52,630.59,21,330
+PRD-0110,Product 110,Safety,156.32,267.63,127,425
+PRD-0111,Product 111,Industrial Parts,376.28,632.12,76,399
+PRD-0112,Product 112,Safety,117.52,175.27,119,322
+PRD-0113,Product 113,Safety,337.75,552.06,139,215
+PRD-0114,Product 114,Industrial Parts,490.55,596.6,120,453
+PRD-0115,Product 115,Electronics,286.55,358.29,129,219
+PRD-0116,Product 116,Office Supplies,434.76,534.83,117,317
+PRD-0117,Product 117,Packaging,113.71,159.48,117,292
+PRD-0118,Product 118,Safety,378.48,511.46,40,390
+PRD-0119,Product 119,Industrial Parts,19.5,24.01,109,264
+PRD-0120,Product 120,Electronics,328.57,542.98,83,252
+PRD-0121,Product 121,Industrial Parts,421.22,543.98,52,392
+PRD-0122,Product 122,Industrial Parts,338.03,597.86,139,508
+PRD-0123,Product 123,Packaging,135.56,176.32,49,548
+PRD-0124,Product 124,Packaging,411.46,520.44,26,309
+PRD-0125,Product 125,Safety,292.14,420.1,70,188
+PRD-0126,Product 126,Office Supplies,300.13,378.51,97,585
+PRD-0127,Product 127,Electronics,345.29,579.31,30,327
+PRD-0128,Product 128,Packaging,271.05,336.47,107,156
+PRD-0129,Product 129,Safety,426.29,538.54,112,475
+PRD-0130,Product 130,Safety,446.87,725.89,131,240
+PRD-0131,Product 131,Packaging,369.56,580.04,143,388
+PRD-0132,Product 132,Industrial Parts,223.43,304.1,82,575
+PRD-0133,Product 133,Packaging,467.96,809.09,82,534
+PRD-0134,Product 134,Industrial Parts,237.71,380.55,106,164
+PRD-0135,Product 135,Packaging,252.21,330.17,74,331
+PRD-0136,Product 136,Packaging,400.94,548.4,90,434
+PRD-0137,Product 137,Office Supplies,14.97,18.73,124,400
+PRD-0138,Product 138,Office Supplies,282.04,455.32,145,379
+PRD-0139,Product 139,Electronics,398.54,548.61,123,504
+PRD-0140,Product 140,Industrial Parts,129.22,183.67,108,367
+PRD-0141,Product 141,Industrial Parts,498.35,696.93,136,288
+PRD-0142,Product 142,Office Supplies,160.25,203.9,69,311
+PRD-0143,Product 143,Industrial Parts,68.58,121.42,67,248
+PRD-0144,Product 144,Safety,116.03,158.49,92,201
+PRD-0145,Product 145,Packaging,417.99,558.64,65,304
+PRD-0146,Product 146,Industrial Parts,16.93,21.6,31,177
+PRD-0147,Product 147,Office Supplies,281.15,444.98,145,202
+PRD-0148,Product 148,Industrial Parts,437.63,599.82,142,375
+PRD-0149,Product 149,Electronics,176.95,239.15,142,208
+PRD-0150,Product 150,Safety,412.84,617.22,33,227
+PRD-0151,Product 151,Industrial Parts,83.11,147.06,41,277
+PRD-0152,Product 152,Safety,68.04,106.4,77,547
+PRD-0153,Product 153,Safety,266.06,464.3,96,590
+PRD-0154,Product 154,Safety,298.38,412.73,35,462
+PRD-0155,Product 155,Electronics,480.45,849.7,73,470
+PRD-0156,Product 156,Electronics,113.4,146.77,64,432
+PRD-0157,Product 157,Electronics,46.78,67.6,140,299
+PRD-0158,Product 158,Packaging,25.99,42.21,136,186
+PRD-0159,Product 159,Packaging,346.82,580.12,70,367
+PRD-0160,Product 160,Office Supplies,66.24,105.23,88,573
+PRD-0161,Product 161,Electronics,79.7,103.57,98,454
+PRD-0162,Product 162,Industrial Parts,376.99,660.76,132,213
+PRD-0163,Product 163,Packaging,239.66,388.21,89,406
+PRD-0164,Product 164,Safety,274.59,342.76,30,371
+PRD-0165,Product 165,Industrial Parts,369.92,499.47,43,267
+PRD-0166,Product 166,Industrial Parts,481.34,747.17,25,541
+PRD-0167,Product 167,Packaging,339.42,524.66,64,390
+PRD-0168,Product 168,Safety,264.29,462.41,66,449
+PRD-0169,Product 169,Safety,223.58,398.29,140,328
+PRD-0170,Product 170,Packaging,210.09,336.58,61,318
+PRD-0171,Product 171,Safety,211.71,290.66,122,566
+PRD-0172,Product 172,Electronics,382.64,563.59,100,279
+PRD-0173,Product 173,Safety,168.4,289.47,20,486
+PRD-0174,Product 174,Safety,435.99,631.29,68,415
+PRD-0175,Product 175,Safety,187.27,295.0,33,254
+PRD-0176,Product 176,Office Supplies,140.86,247.44,132,600
+PRD-0177,Product 177,Electronics,352.14,428.67,81,513
+PRD-0178,Product 178,Industrial Parts,87.61,105.85,124,197
+PRD-0179,Product 179,Electronics,120.1,177.37,50,481
+PRD-0180,Product 180,Safety,417.75,735.07,94,410
+PRD-0181,Product 181,Safety,355.65,604.9,140,274
+PRD-0182,Product 182,Office Supplies,233.83,334.41,150,532
+PRD-0183,Product 183,Electronics,440.87,602.12,126,324
+PRD-0184,Product 184,Industrial Parts,467.78,636.32,20,294
+PRD-0185,Product 185,Industrial Parts,365.76,566.18,145,593
+PRD-0186,Product 186,Industrial Parts,82.81,123.44,105,432
+PRD-0187,Product 187,Safety,383.81,565.43,102,595
+PRD-0188,Product 188,Office Supplies,102.44,158.07,79,588
+PRD-0189,Product 189,Electronics,390.02,542.48,141,511
+PRD-0190,Product 190,Safety,457.58,655.09,58,403
+PRD-0191,Product 191,Office Supplies,482.76,724.8,104,595
+PRD-0192,Product 192,Safety,59.18,74.56,136,157
+PRD-0193,Product 193,Safety,364.0,627.01,59,188
+PRD-0194,Product 194,Packaging,240.05,336.82,121,482
+PRD-0195,Product 195,Packaging,49.35,84.46,117,312
+PRD-0196,Product 196,Safety,317.13,546.55,29,466
+PRD-0197,Product 197,Packaging,43.53,78.29,43,372
+PRD-0198,Product 198,Electronics,489.39,717.55,96,164
+PRD-0199,Product 199,Electronics,32.54,44.78,115,370
+PRD-0200,Product 200,Industrial Parts,81.33,117.7,66,237
+PRD-0201,Product 201,Industrial Parts,95.78,164.98,81,404
+PRD-0202,Product 202,Office Supplies,457.29,612.45,85,385
+PRD-0203,Product 203,Electronics,135.11,235.0,139,297
+PRD-0204,Product 204,Office Supplies,342.03,425.59,108,450
+PRD-0205,Product 205,Safety,156.59,252.77,136,582
+PRD-0206,Product 206,Safety,158.04,270.56,47,271
+PRD-0207,Product 207,Packaging,196.87,304.14,95,161
+PRD-0208,Product 208,Safety,489.19,667.59,32,460
+PRD-0209,Product 209,Packaging,375.13,624.76,78,460
+PRD-0210,Product 210,Office Supplies,402.95,637.46,84,497
+PRD-0211,Product 211,Office Supplies,380.23,599.6,30,308
+PRD-0212,Product 212,Electronics,396.42,613.56,53,196
+PRD-0213,Product 213,Packaging,455.72,751.25,64,252
+PRD-0214,Product 214,Industrial Parts,74.76,129.03,113,421
+PRD-0215,Product 215,Packaging,255.88,434.56,85,572
+PRD-0216,Product 216,Packaging,472.65,778.9,106,561
+PRD-0217,Product 217,Electronics,66.43,85.33,77,590
+PRD-0218,Product 218,Safety,341.4,607.82,113,196
+PRD-0219,Product 219,Electronics,397.43,539.98,51,382
+PRD-0220,Product 220,Packaging,190.61,295.59,115,205
+PRD-0221,Product 221,Safety,340.67,413.92,103,462
+PRD-0222,Product 222,Electronics,118.47,187.33,138,508
+PRD-0223,Product 223,Safety,158.07,200.75,31,169
+PRD-0224,Product 224,Safety,159.14,202.06,80,425
+PRD-0225,Product 225,Safety,76.48,108.8,127,450
+PRD-0226,Product 226,Office Supplies,373.71,646.98,45,576
+PRD-0227,Product 227,Safety,249.78,440.47,91,166
+PRD-0228,Product 228,Office Supplies,348.24,510.53,80,587
+PRD-0229,Product 229,Packaging,187.72,286.59,111,181
+PRD-0230,Product 230,Office Supplies,205.09,365.25,136,196
+PRD-0231,Product 231,Industrial Parts,334.76,596.76,32,552
+PRD-0232,Product 232,Office Supplies,173.42,289.99,72,185
+PRD-0233,Product 233,Industrial Parts,416.61,551.71,75,566
+PRD-0234,Product 234,Packaging,436.15,726.02,20,291
+PRD-0235,Product 235,Office Supplies,430.62,771.89,84,558
+PRD-0236,Product 236,Electronics,95.5,122.15,111,554
+PRD-0237,Product 237,Industrial Parts,396.33,552.59,64,285
+PRD-0238,Product 238,Safety,35.68,54.08,36,393
+PRD-0239,Product 239,Packaging,229.65,346.3,47,381
+PRD-0240,Product 240,Industrial Parts,256.88,314.94,97,384
+PRD-0241,Product 241,Electronics,325.24,402.16,142,583
+PRD-0242,Product 242,Electronics,206.79,308.98,133,187
+PRD-0243,Product 243,Packaging,450.64,705.24,36,214
+PRD-0244,Product 244,Industrial Parts,144.76,221.34,103,345
+PRD-0245,Product 245,Industrial Parts,497.37,684.85,149,459
+PRD-0246,Product 246,Electronics,220.8,377.94,75,370
+PRD-0247,Product 247,Office Supplies,231.26,334.93,136,354
+PRD-0248,Product 248,Electronics,213.83,296.7,100,490
+PRD-0249,Product 249,Office Supplies,134.9,217.47,141,184
+PRD-0250,Product 250,Electronics,54.7,68.7,44,531
+PRD-0251,Product 251,Office Supplies,372.01,570.6,104,493
+PRD-0252,Product 252,Packaging,69.89,120.5,128,594
+PRD-0253,Product 253,Electronics,458.76,817.07,99,330
+PRD-0254,Product 254,Industrial Parts,60.76,80.67,143,264
+PRD-0255,Product 255,Packaging,425.16,725.84,114,208
+PRD-0256,Product 256,Industrial Parts,383.68,512.48,129,582
+PRD-0257,Product 257,Industrial Parts,284.87,446.72,26,461
+PRD-0258,Product 258,Packaging,465.25,566.38,89,509
+PRD-0259,Product 259,Packaging,383.58,541.08,66,595
+PRD-0260,Product 260,Safety,80.19,99.58,27,196
+PRD-0261,Product 261,Office Supplies,375.59,535.48,136,324
+PRD-0262,Product 262,Packaging,87.13,142.28,41,176
+PRD-0263,Product 263,Industrial Parts,86.23,106.05,40,289
+PRD-0264,Product 264,Safety,227.13,338.74,133,362
+PRD-0265,Product 265,Industrial Parts,143.85,182.44,130,206
+PRD-0266,Product 266,Industrial Parts,148.79,221.99,98,173
+PRD-0267,Product 267,Industrial Parts,118.05,145.54,72,304
+PRD-0268,Product 268,Office Supplies,473.21,784.82,94,317
+PRD-0269,Product 269,Safety,68.79,113.38,64,216
+PRD-0270,Product 270,Office Supplies,196.3,294.48,110,186
+PRD-0271,Product 271,Electronics,204.56,299.01,137,189
+PRD-0272,Product 272,Industrial Parts,432.43,630.3,123,513
+PRD-0273,Product 273,Packaging,323.67,410.77,25,316
+PRD-0274,Product 274,Industrial Parts,94.22,139.07,112,195
+PRD-0275,Product 275,Electronics,223.99,301.49,122,418
+PRD-0276,Product 276,Packaging,48.54,79.97,76,320
+PRD-0277,Product 277,Electronics,391.77,590.12,49,421
+PRD-0278,Product 278,Packaging,259.88,366.6,57,270
+PRD-0279,Product 279,Packaging,60.37,79.59,59,539
+PRD-0280,Product 280,Electronics,381.98,498.98,146,387
+PRD-0281,Product 281,Industrial Parts,379.68,557.88,102,592
+PRD-0282,Product 282,Packaging,485.78,626.94,37,390
+PRD-0283,Product 283,Packaging,226.68,380.32,34,330
+PRD-0284,Product 284,Packaging,258.6,381.96,29,179
+PRD-0285,Product 285,Packaging,190.68,237.59,43,464
+PRD-0286,Product 286,Safety,301.1,444.91,30,380
+PRD-0287,Product 287,Industrial Parts,455.43,724.64,102,459
+PRD-0288,Product 288,Office Supplies,243.06,431.34,135,202
+PRD-0289,Product 289,Packaging,407.37,728.96,41,408
+PRD-0290,Product 290,Electronics,326.6,440.47,132,374
+PRD-0291,Product 291,Industrial Parts,266.79,345.56,115,294
+PRD-0292,Product 292,Packaging,199.83,321.19,33,554
+PRD-0293,Product 293,Packaging,319.13,395.58,44,435
+PRD-0294,Product 294,Packaging,342.41,462.66,58,320
+PRD-0295,Product 295,Office Supplies,49.94,87.4,99,485
+PRD-0296,Product 296,Safety,352.26,449.97,41,308
+PRD-0297,Product 297,Packaging,283.87,479.15,43,480
+PRD-0298,Product 298,Industrial Parts,338.52,479.72,112,308
+PRD-0299,Product 299,Office Supplies,98.33,138.16,144,248
+PRD-0300,Product 300,Office Supplies,121.01,156.46,95,582
+PRD-0301,Product 301,Industrial Parts,396.18,658.66,29,488
+PRD-0302,Product 302,Industrial Parts,175.01,223.77,116,228
+PRD-0303,Product 303,Industrial Parts,89.5,150.85,62,519
+PRD-0304,Product 304,Safety,224.46,318.41,80,377
+PRD-0305,Product 305,Safety,309.19,414.44,81,308
+PRD-0306,Product 306,Safety,483.14,841.82,69,338
+PRD-0307,Product 307,Industrial Parts,342.37,613.07,138,543
+PRD-0308,Product 308,Safety,148.07,222.36,127,232
+PRD-0309,Product 309,Industrial Parts,410.28,526.41,84,176
+PRD-0310,Product 310,Packaging,324.18,496.88,46,514
+PRD-0311,Product 311,Electronics,424.49,581.99,61,289
+PRD-0312,Product 312,Industrial Parts,230.17,296.55,131,196
+PRD-0313,Product 313,Office Supplies,473.74,800.63,109,163
+PRD-0314,Product 314,Safety,213.3,320.21,80,347
+PRD-0315,Product 315,Packaging,497.32,663.78,101,200
+PRD-0316,Product 316,Packaging,421.2,705.44,55,169
+PRD-0317,Product 317,Safety,150.57,243.57,55,538
+PRD-0318,Product 318,Safety,355.71,558.18,40,159
+PRD-0319,Product 319,Office Supplies,135.4,207.06,128,206
+PRD-0320,Product 320,Office Supplies,390.32,538.91,32,272
+PRD-0321,Product 321,Industrial Parts,215.71,318.01,48,578
+PRD-0322,Product 322,Industrial Parts,453.52,690.09,81,517
+PRD-0323,Product 323,Safety,80.35,96.5,110,273
+PRD-0324,Product 324,Office Supplies,289.63,463.01,41,418
+PRD-0325,Product 325,Electronics,487.58,864.01,149,552
+PRD-0326,Product 326,Industrial Parts,494.28,599.17,140,172
+PRD-0327,Product 327,Packaging,321.48,434.7,24,332
+PRD-0328,Product 328,Packaging,396.37,532.99,46,545
+PRD-0329,Product 329,Packaging,295.13,377.78,110,429
+PRD-0330,Product 330,Office Supplies,175.89,298.7,138,506
+PRD-0331,Product 331,Office Supplies,244.48,412.41,36,516
+PRD-0332,Product 332,Safety,390.33,477.06,71,172
+PRD-0333,Product 333,Electronics,397.64,552.46,99,413
+PRD-0334,Product 334,Industrial Parts,205.13,304.42,29,535
+PRD-0335,Product 335,Packaging,326.98,462.41,32,593
+PRD-0336,Product 336,Packaging,331.31,422.32,114,373
+PRD-0337,Product 337,Safety,445.85,774.34,118,323
+PRD-0338,Product 338,Safety,487.12,786.82,114,558
+PRD-0339,Product 339,Electronics,264.45,432.71,40,370
+PRD-0340,Product 340,Office Supplies,305.2,466.13,102,202
+PRD-0341,Product 341,Packaging,49.23,68.13,129,235
+PRD-0342,Product 342,Packaging,347.98,510.93,110,464
+PRD-0343,Product 343,Packaging,499.09,790.4,34,188
+PRD-0344,Product 344,Safety,338.88,480.53,60,165
+PRD-0345,Product 345,Industrial Parts,79.96,128.48,132,167
+PRD-0346,Product 346,Office Supplies,71.85,119.78,113,335
+PRD-0347,Product 347,Industrial Parts,197.6,240.96,59,497
+PRD-0348,Product 348,Packaging,230.46,327.99,39,443
+PRD-0349,Product 349,Packaging,77.47,111.47,91,277
+PRD-0350,Product 350,Electronics,480.65,788.94,147,415
+PRD-0351,Product 351,Industrial Parts,199.62,253.65,86,510
+PRD-0352,Product 352,Industrial Parts,228.67,313.59,145,252
+PRD-0353,Product 353,Electronics,70.09,103.12,133,194
+PRD-0354,Product 354,Packaging,407.15,651.73,36,431
+PRD-0355,Product 355,Packaging,275.66,471.6,64,556
+PRD-0356,Product 356,Office Supplies,187.13,238.18,71,555
+PRD-0357,Product 357,Safety,78.05,94.89,114,389
+PRD-0358,Product 358,Industrial Parts,403.79,515.99,42,183
+PRD-0359,Product 359,Safety,161.55,244.82,124,571
+PRD-0360,Product 360,Office Supplies,291.7,520.23,38,380
+PRD-0361,Product 361,Industrial Parts,238.26,335.16,66,543
+PRD-0362,Product 362,Safety,483.47,726.04,34,575
+PRD-0363,Product 363,Office Supplies,70.84,97.93,61,315
+PRD-0364,Product 364,Office Supplies,468.02,658.79,92,583
+PRD-0365,Product 365,Office Supplies,48.64,76.9,90,214
+PRD-0366,Product 366,Industrial Parts,316.26,480.74,148,478
+PRD-0367,Product 367,Industrial Parts,92.63,119.73,106,581
+PRD-0368,Product 368,Electronics,462.73,784.39,27,191
+PRD-0369,Product 369,Industrial Parts,32.28,43.86,73,542
+PRD-0370,Product 370,Industrial Parts,290.35,459.74,147,471
+PRD-0371,Product 371,Packaging,277.33,413.16,123,302
+PRD-0372,Product 372,Electronics,232.24,300.72,126,397
+PRD-0373,Product 373,Packaging,237.58,371.57,100,591
+PRD-0374,Product 374,Packaging,362.0,646.25,53,539
+PRD-0375,Product 375,Industrial Parts,191.56,242.08,81,388
+PRD-0376,Product 376,Safety,70.04,94.47,44,175
+PRD-0377,Product 377,Safety,152.2,261.56,127,277
+PRD-0378,Product 378,Office Supplies,481.72,813.19,100,247
+PRD-0379,Product 379,Safety,383.93,690.15,139,405
+PRD-0380,Product 380,Safety,440.75,535.03,120,408
+PRD-0381,Product 381,Office Supplies,234.04,311.06,110,174
+PRD-0382,Product 382,Safety,34.76,54.17,140,296
+PRD-0383,Product 383,Electronics,272.98,398.16,87,522
+PRD-0384,Product 384,Safety,189.23,268.62,122,176
+PRD-0385,Product 385,Office Supplies,289.44,410.29,93,187
+PRD-0386,Product 386,Safety,199.31,330.58,91,572
+PRD-0387,Product 387,Industrial Parts,494.65,628.84,44,351
+PRD-0388,Product 388,Packaging,192.87,296.0,113,536
+PRD-0389,Product 389,Industrial Parts,80.69,121.48,148,170
+PRD-0390,Product 390,Office Supplies,32.2,52.43,141,415
+PRD-0391,Product 391,Industrial Parts,233.92,406.06,55,317
+PRD-0392,Product 392,Packaging,466.37,605.12,96,453
+PRD-0393,Product 393,Industrial Parts,174.82,265.62,96,393
+PRD-0394,Product 394,Packaging,409.72,573.09,48,363
+PRD-0395,Product 395,Electronics,296.01,461.23,87,485
+PRD-0396,Product 396,Industrial Parts,393.62,608.77,33,448
+PRD-0397,Product 397,Industrial Parts,245.42,387.13,117,225
+PRD-0398,Product 398,Office Supplies,412.61,502.95,48,247
+PRD-0399,Product 399,Packaging,19.28,27.98,125,503
+PRD-0400,Product 400,Industrial Parts,109.91,183.0,140,596
+PRD-0401,Product 401,Electronics,425.7,691.11,73,437
+PRD-0402,Product 402,Safety,169.27,256.49,100,238
+PRD-0403,Product 403,Industrial Parts,235.24,330.61,110,496
+PRD-0404,Product 404,Packaging,388.27,608.05,69,276
+PRD-0405,Product 405,Packaging,146.71,195.85,96,544
+PRD-0406,Product 406,Office Supplies,151.61,244.72,145,312
+PRD-0407,Product 407,Industrial Parts,245.1,431.43,90,297
+PRD-0408,Product 408,Industrial Parts,69.72,99.55,121,569
+PRD-0409,Product 409,Office Supplies,179.12,246.16,93,515
+PRD-0410,Product 410,Safety,48.72,77.64,142,259
+PRD-0411,Product 411,Industrial Parts,109.01,148.55,89,220
+PRD-0412,Product 412,Industrial Parts,63.52,85.34,32,492
+PRD-0413,Product 413,Office Supplies,453.54,717.85,33,201
+PRD-0414,Product 414,Safety,212.52,267.84,55,152
+PRD-0415,Product 415,Office Supplies,482.61,696.96,141,394
+PRD-0416,Product 416,Packaging,328.76,457.86,35,543
+PRD-0417,Product 417,Industrial Parts,53.84,72.11,29,239
+PRD-0418,Product 418,Office Supplies,214.76,378.05,29,578
+PRD-0419,Product 419,Safety,204.53,268.3,94,598
+PRD-0420,Product 420,Packaging,28.36,43.7,47,321
+PRD-0421,Product 421,Industrial Parts,149.44,226.34,54,585
+PRD-0422,Product 422,Packaging,257.06,338.21,48,319
+PRD-0423,Product 423,Safety,89.62,142.4,67,157
+PRD-0424,Product 424,Packaging,370.94,571.5,69,239
+PRD-0425,Product 425,Safety,309.37,524.75,103,194
+PRD-0426,Product 426,Electronics,206.41,270.58,55,394
+PRD-0427,Product 427,Office Supplies,168.56,202.96,118,270
+PRD-0428,Product 428,Packaging,228.9,405.71,97,448
+PRD-0429,Product 429,Electronics,364.21,494.21,112,504
+PRD-0430,Product 430,Electronics,125.79,186.07,60,357
+PRD-0431,Product 431,Packaging,346.18,558.79,95,338
+PRD-0432,Product 432,Office Supplies,311.17,552.15,142,228
+PRD-0433,Product 433,Industrial Parts,232.94,331.75,140,537
+PRD-0434,Product 434,Office Supplies,273.38,453.02,40,419
+PRD-0435,Product 435,Packaging,228.91,285.42,48,181
+PRD-0436,Product 436,Industrial Parts,416.1,549.79,58,234
+PRD-0437,Product 437,Industrial Parts,170.78,250.21,72,517
+PRD-0438,Product 438,Electronics,295.74,514.39,134,564
+PRD-0439,Product 439,Office Supplies,37.26,56.19,136,438
+PRD-0440,Product 440,Safety,38.29,61.4,98,520
+PRD-0441,Product 441,Packaging,20.67,34.93,75,446
+PRD-0442,Product 442,Safety,45.78,64.4,36,427
+PRD-0443,Product 443,Electronics,497.12,890.68,140,166
+PRD-0444,Product 444,Office Supplies,150.67,250.32,127,341
+PRD-0445,Product 445,Safety,496.5,729.42,116,342
+PRD-0446,Product 446,Industrial Parts,49.32,63.12,109,210
+PRD-0447,Product 447,Industrial Parts,97.45,139.92,52,522
+PRD-0448,Product 448,Electronics,489.57,809.61,96,387
+PRD-0449,Product 449,Industrial Parts,340.01,494.54,117,571
+PRD-0450,Product 450,Safety,122.54,172.5,90,246
+PRD-0451,Product 451,Electronics,469.33,572.27,127,464
+PRD-0452,Product 452,Electronics,385.37,518.09,37,201
+PRD-0453,Product 453,Safety,301.03,469.21,32,275
+PRD-0454,Product 454,Safety,372.87,545.65,75,536
+PRD-0455,Product 455,Electronics,433.23,556.3,94,269
+PRD-0456,Product 456,Industrial Parts,409.74,570.09,102,271
+PRD-0457,Product 457,Office Supplies,157.86,282.79,76,361
+PRD-0458,Product 458,Electronics,157.25,241.23,64,470
+PRD-0459,Product 459,Industrial Parts,342.59,512.98,108,479
+PRD-0460,Product 460,Industrial Parts,338.96,471.57,126,359
+PRD-0461,Product 461,Safety,83.12,108.91,141,273
+PRD-0462,Product 462,Packaging,426.18,730.7,56,562
+PRD-0463,Product 463,Electronics,236.88,364.19,126,435
+PRD-0464,Product 464,Safety,269.7,362.94,72,319
+PRD-0465,Product 465,Safety,326.89,558.42,43,424
+PRD-0466,Product 466,Office Supplies,365.05,449.35,116,494
+PRD-0467,Product 467,Electronics,306.44,528.36,68,561
+PRD-0468,Product 468,Industrial Parts,383.23,509.78,73,595
+PRD-0469,Product 469,Packaging,454.45,806.29,23,258
+PRD-0470,Product 470,Electronics,469.21,773.32,142,274
+PRD-0471,Product 471,Office Supplies,350.86,504.53,81,432
+PRD-0472,Product 472,Packaging,167.59,239.39,111,307
+PRD-0473,Product 473,Industrial Parts,138.17,238.99,139,200
+PRD-0474,Product 474,Safety,403.38,668.39,101,254
+PRD-0475,Product 475,Safety,191.65,235.24,76,529
+PRD-0476,Product 476,Packaging,81.5,124.86,126,301
+PRD-0477,Product 477,Packaging,84.68,113.3,82,405
+PRD-0478,Product 478,Packaging,279.81,378.97,145,520
+PRD-0479,Product 479,Safety,324.43,479.02,110,236
+PRD-0480,Product 480,Industrial Parts,78.58,117.32,35,418
+PRD-0481,Product 481,Electronics,26.57,46.95,32,541
+PRD-0482,Product 482,Office Supplies,13.13,22.39,79,184
+PRD-0483,Product 483,Electronics,356.51,474.6,136,341
+PRD-0484,Product 484,Industrial Parts,39.62,69.24,144,158
+PRD-0485,Product 485,Industrial Parts,13.24,19.16,24,421
+PRD-0486,Product 486,Industrial Parts,363.87,650.05,24,407
+PRD-0487,Product 487,Safety,408.45,687.71,65,204
+PRD-0488,Product 488,Industrial Parts,459.84,592.89,69,467
+PRD-0489,Product 489,Packaging,267.96,364.53,121,190
+PRD-0490,Product 490,Safety,192.8,284.46,82,506
+PRD-0491,Product 491,Electronics,120.67,192.14,28,197
+PRD-0492,Product 492,Safety,208.59,319.48,34,476
+PRD-0493,Product 493,Office Supplies,14.63,18.28,131,480
+PRD-0494,Product 494,Industrial Parts,394.34,704.45,44,420
+PRD-0495,Product 495,Office Supplies,460.38,610.86,141,288
+PRD-0496,Product 496,Electronics,32.82,52.86,91,428
+PRD-0497,Product 497,Electronics,286.12,374.13,100,158
+PRD-0498,Product 498,Industrial Parts,481.12,618.97,121,189
+PRD-0499,Product 499,Industrial Parts,156.65,210.58,119,496
+PRD-0500,Product 500,Packaging,449.3,642.64,55,554

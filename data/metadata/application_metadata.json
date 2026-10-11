@@ -1,0 +1,355 @@
+{
+  "version": "1.0.0",
+  "application": "BizPilot AI",
+  "description": "Context-aware supply chain and business operations application",
+  "pages": [
+    {
+      "page_id": "PAGE_DASHBOARD",
+      "title": "Business Overview",
+      "route": "/dashboard",
+      "description": "Executive dashboard providing a high-level snapshot of overall business health, headline KPIs, total revenue, order counts, inventory health indicators and operational summaries across the company.",
+"keywords": [
+  "dashboard",
+  "business overview",
+  "executive summary",
+  "overall business health",
+  "headline KPIs",
+  "company snapshot",
+  "business at a glance",
+  "high-level metrics",
+  "total revenue",
+  "operational summary"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_REVENUE",
+          "type": "chart",
+          "description": "Revenue trends over time"
+        },
+        {
+          "widget_id": "WIDGET_ORDERS",
+          "type": "summary",
+          "description": "Order counts and order status"
+        },
+        {
+          "widget_id": "WIDGET_STOCK_HEALTH",
+          "type": "chart",
+          "description": "Inventory availability and low-stock indicators"
+        }
+      ],
+      "allowed_actions": [
+        "view_dashboard",
+        "filter_dashboard",
+        "analyze_kpis"
+      ]
+    },
+    {
+      "page_id": "PAGE_INVENTORY",
+      "title": "Inventory and Warehouse",
+      "route": "/inventory",
+      "description": "Inventory and warehouse operations for monitoring product quantities on hand, available warehouse stock, stock movements, low-stock items, minimum stock thresholds, reorder requirements, inventory shortages and potential stockouts.",
+"keywords": [
+  "inventory",
+  "warehouse stock",
+  "stock levels",
+  "quantity on hand",
+  "available units",
+  "low stock",
+  "replenishment",
+  "reorder point",
+  "reorder threshold",
+  "stockout risk",
+  "inventory shortage",
+  "stock movement",
+  "product availability",
+  "remaining units"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_INVENTORY_GRID",
+          "type": "data_grid",
+          "description": "Searchable product inventory records"
+        },
+        {
+          "widget_id": "WIDGET_LOW_STOCK",
+          "type": "table",
+          "description": "Products below their reorder thresholds"
+        }
+      ],
+      "filters": [
+        "product",
+        "warehouse",
+        "category",
+        "stock_status"
+      ],
+      "allowed_actions": [
+        "view_inventory",
+        "filter_inventory",
+        "sort_inventory",
+        "report_discrepancy"
+      ]
+    },
+    {
+      "page_id": "PAGE_SUPPLIERS",
+      "title": "Supplier Management",
+      "route": "/suppliers",
+      "description": "Supplier directory and supplier evaluation for comparing vendor quotations, product purchase prices, supplier offers, delivery lead times, supplier reliability and supplier contact information to support vendor selection.",
+"keywords": [
+  "supplier directory",
+  "vendor directory",
+  "supplier details",
+  "vendor information",
+  "supplier comparison",
+  "vendor comparison",
+  "supplier quotations",
+  "supplier offers",
+  "vendor pricing",
+  "lowest supplier price",
+  "supplier lead time",
+  "fastest supplier",
+  "supplier reliability",
+  "supplier contact information"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_SUPPLIER_GRID",
+          "type": "data_grid",
+          "description": "Supplier records and performance"
+        },
+        {
+          "widget_id": "WIDGET_SUPPLIER_COMPARISON",
+          "type": "table",
+          "description": "Compare supplier prices, delivery times and reliability"
+        }
+      ],
+      "filters": [
+        "supplier",
+        "region",
+        "reliability",
+        "lead_time"
+      ],
+      "allowed_actions": [
+        "view_suppliers",
+        "compare_suppliers",
+        "filter_suppliers"
+      ]
+    },
+    {
+      "page_id": "PAGE_PROCUREMENT",
+      "title": "Procurement and Purchase Orders",
+      "route": "/procurement",
+      "description": "Procurement operations for creating and reviewing purchase orders, monitoring purchase order status, managing procurement requests, reviewing pending orders, tracking approval workflows and coordinating orders placed with suppliers.",
+"keywords": [
+  "procurement",
+  "purchase order",
+  "purchase order status",
+  "create purchase order",
+  "pending purchase orders",
+  "procurement request",
+  "purchase approval",
+  "approval workflow",
+  "orders awaiting approval",
+  "supplier orders",
+  "purchasing process",
+  "procurement operations",
+  "purchase order tracking"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_PO_GRID",
+          "type": "data_grid",
+          "description": "Purchase order records and statuses"
+        },
+        {
+          "widget_id": "WIDGET_PO_FORM",
+          "type": "form",
+          "description": "Create or edit a purchase order draft"
+        }
+      ],
+      "filters": [
+        "supplier",
+        "order_status",
+        "date_range",
+        "warehouse"
+      ],
+      "allowed_actions": [
+        "view_purchase_orders",
+        "prepare_purchase_order_draft",
+        "submit_purchase_order_for_approval"
+      ]
+    },
+    {
+      "page_id": "PAGE_SALES",
+      "title": "Sales and Customer Orders",
+      "route": "/sales",
+      "description": "Customer sales operations for viewing customer orders, tracking sales order status, analyzing quantities sold, identifying best-selling products, comparing sales performance over time and examining sales by customer or region.",
+"keywords": [
+  "customer sales",
+  "customer orders",
+  "sales orders",
+  "order status",
+  "sales volume",
+  "units sold",
+  "best-selling products",
+  "top-selling products",
+  "product sales",
+  "sales trends",
+  "monthly sales",
+  "sales by customer",
+  "regional sales",
+  "sales performance"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_SALES_GRID",
+          "type": "data_grid",
+          "description": "Sales and customer order records"
+        },
+        {
+          "widget_id": "WIDGET_SALES_CHART",
+          "type": "chart",
+          "description": "Revenue and order trends over time"
+        }
+      ],
+      "filters": [
+        "date_range",
+        "product",
+        "region",
+        "order_status"
+      ],
+      "allowed_actions": [
+        "view_sales",
+        "filter_sales",
+        "analyze_sales"
+      ]
+    },
+    {
+      "page_id": "PAGE_LOGISTICS",
+      "title": "Logistics and Deliveries",
+      "route": "/logistics",
+      "description": "Shipment and delivery operations for tracking dispatches, monitoring shipment status, identifying delayed or overdue deliveries, checking promised delivery dates, tracking shipments in transit and reviewing delivery completion.",
+"keywords": [
+"shipment tracking",
+"delivery tracking",
+"delayed shipments",
+"late deliveries",
+"overdue deliveries",
+"missed delivery date",
+"promised delivery date",
+"expected arrival",
+"shipments in transit",
+"dispatch status",
+"delivery completion",
+"shipment status",
+"delivery delays",
+"undelivered shipments"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_DELIVERY_GRID",
+          "type": "data_grid",
+          "description": "Delivery records and current shipment status"
+        }
+      ],
+      "filters": [
+        "delivery_status",
+        "carrier",
+        "region",
+        "date_range"
+      ],
+      "allowed_actions": [
+        "view_deliveries",
+        "filter_deliveries",
+        "analyze_delivery_delays"
+      ]
+    },
+    {
+      "page_id": "PAGE_FINANCE",
+      "title": "Finance and Cash Flow",
+      "route": "/finance",
+      "description": "Financial operations for reviewing cash inflows and outflows, money received and spent, business income and expenditure, outstanding expenses, financial transactions, expense records, supplier payments and cash flow over time.",
+"keywords": [
+  "financial transactions",
+  "cash flow",
+  "cash inflow",
+  "cash outflow",
+  "money received",
+  "money spent",
+  "income and expenditure",
+  "business expenses",
+  "outstanding expenses",
+  "expense records",
+  "supplier payments",
+  "financial records",
+  "operating expenditure",
+  "cash movement"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_CASH_FLOW",
+          "type": "chart",
+          "description": "Cash inflows and outflows over time"
+        },
+        {
+          "widget_id": "WIDGET_EXPENSES",
+          "type": "table",
+          "description": "Business expenses and payments"
+        }
+      ],
+      "filters": [
+        "date_range",
+        "transaction_type",
+        "transaction_status"
+      ],
+      "allowed_actions": [
+        "view_finance",
+        "filter_transactions",
+        "analyze_cash_flow"
+      ]
+    },
+    {
+      "page_id": "PAGE_ANALYTICS",
+      "title": "Analytics and Business Reports",
+      "route": "/analytics",
+      "description": "Business intelligence and analytical reporting for comparing key performance indicators across time periods, examining historical trends, identifying patterns, generating comparative reports and analyzing changes across multiple business functions.",
+"keywords": [
+  "business intelligence",
+  "analytical reports",
+  "business performance analysis",
+  "historical trends",
+  "cross-period comparison",
+  "period-over-period analysis",
+  "KPI comparison",
+  "metric comparison",
+  "trend analysis",
+  "historical performance",
+  "business patterns",
+  "comparative reports",
+  "performance changes",
+  "cross-functional analysis"
+],
+      "widgets": [
+        {
+          "widget_id": "WIDGET_ANALYTICS_CHART",
+          "type": "chart",
+          "description": "Business trends and period comparisons"
+        },
+        {
+          "widget_id": "WIDGET_REPORT_GRID",
+          "type": "data_grid",
+          "description": "Report results and supporting business records"
+        }
+      ],
+      "filters": [
+        "date_range",
+        "region",
+        "category"
+      ],
+      "allowed_actions": [
+        "view_analytics",
+        "compare_periods",
+        "generate_report"
+      ]
+    }
+  ]
+}
