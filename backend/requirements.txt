@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 fastapi
 uvicorn[standard]
 sqlalchemy
@@ -8,3 +10,4 @@ sentence-transformers
 faiss-cpu
 numpy
 psycopg[binary]
+torch==2.7.1+cpu
